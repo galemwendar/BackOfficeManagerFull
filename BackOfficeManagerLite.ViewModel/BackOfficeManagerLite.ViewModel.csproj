@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="WindowsAPICodePack" Version="7.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BackOfficeManager.CoreViewModel\BackOfficeManager.CoreViewModel.csproj" />
+    <ProjectReference Include="..\BackOfficeManagerModels.Client\BackOfficeManager.Client.csproj" />
+  </ItemGroup>
+
+</Project>

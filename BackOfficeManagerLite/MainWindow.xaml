@@ -1,0 +1,140 @@
+﻿<Window x:Class="BackOfficeManagerLite.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BackOfficeManagerLite"
+        mc:Ignorable="d"
+        Title="BackOfficeManager Lite" Height="450" Width="800">
+    <Grid  Margin="5">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+
+        </Grid.RowDefinitions>
+        <!--Main block-->
+
+        <Grid Grid.Row="1" Margin="5">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Grid.Row="0" Margin="5" 
+                       Text="Введите адрес сервера:"/>
+            <TextBox 
+            Grid.Row="1"
+             Text="{Binding ServerAdress ,Mode=OneWayToSource}"
+                Margin="5"/>
+
+
+
+            <Button
+                Grid.Row="1"
+                Margin="5"
+                Grid.Column="1" 
+                Content="Проверить" Width="100"
+                Command="{Binding CheckProperties}"  
+                HorizontalAlignment="Left"/>
+            <Button
+                Grid.Row="1"
+                Margin="5"
+                Grid.Column="2"
+                Content="Открыть" Width="100"
+                Command ="{Binding OpenBackOffice}"
+                HorizontalAlignment="Right"/>
+
+        </Grid>
+
+
+        <!--Settings block-->
+        <Grid Grid.Row="2" Margin="5">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+
+
+            <TextBlock
+                Margin="5"
+                Grid.Row="0" Grid.Column="0"
+                Text="Путь до папки с бэкофисами:"/>
+
+            <Border Grid.Row="1" Grid.Column="1" Margin="5"
+                    BorderBrush="DimGray"
+                    BorderThickness="1">
+                <TextBlock 
+                       Margin="5"
+                       Text="{Binding PathToFolder}"
+                       Width="250"
+                       HorizontalAlignment="Left"/>
+            </Border>
+            <Button  Grid.Row="1"  Grid.Column="1"
+                Margin="5"    
+                Content="..." Width="30"
+                HorizontalAlignment="Right"
+                     Command="{Binding SetPathToFolder}"/>
+
+            <Grid Grid.Row="2">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <TextBlock
+                    Grid.Row="0" Grid.Column="0"
+                    Text="Логин:" Margin="5"/>
+                <TextBox
+                    Grid.Row="0" Grid.Column="1"
+                    Text="{Binding Login}" Margin="5"/>
+                <TextBlock
+                    Grid.Row="1" Grid.Column="0"
+                    Text="Пароль:" Margin="5"/>
+                <TextBox
+                    Grid.Row="1" Grid.Column="1"
+                    Text="{Binding Password}" Margin="5"/>
+                <Button
+                    Margin="3" Grid.Row="2" 
+                    Content="Закрыть все" Width="100"
+                    HorizontalAlignment="Right"
+                    Command="{Binding CloseAll}"/>
+                <Button
+                    Margin="3" Grid.Column="1"
+                    Grid.Row="2" Width="100"
+                    Content="Сохранить" 
+                    HorizontalAlignment="Right"
+                    Command="{Binding SaveSettings}"/>
+            </Grid>
+
+
+
+        </Grid>
+
+
+        <!--Log-->
+        <Border Grid.Row="3" BorderBrush="DimGray" BorderThickness="1" Margin="5">
+            <TextBox
+                 Grid.Row="3" Text="{Binding OutputLog}"
+                 IsReadOnly="True"
+                 VerticalScrollBarVisibility="Auto"/>
+        </Border>
+
+    </Grid>
+</Window>

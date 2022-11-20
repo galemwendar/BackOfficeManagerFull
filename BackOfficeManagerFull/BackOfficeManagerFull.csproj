@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Rescourses\fakechain.png" />
+    <None Remove="Rescourses\fakeRMS.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Rescourses\fakechain.png" />
+    <EmbeddedResource Include="Rescourses\fakeRMS.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0" />
+  </ItemGroup>
+
+</Project>

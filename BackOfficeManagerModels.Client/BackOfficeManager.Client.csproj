@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BackOfficeManager.Entities\BackOfficeManager.Entities.csproj" />
+    <ProjectReference Include="..\BackOfficeManager.Settings\BackOfficeManager.Settings.csproj" />
+    <ProjectReference Include="..\BackOfficeManagerModels.Core\BackOfficeManager.Core.csproj" />
+  </ItemGroup>
+
+</Project>

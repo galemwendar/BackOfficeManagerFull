@@ -1,0 +1,99 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33103.184
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BackOfficeManagerFull", "BackOfficeManagerFull\BackOfficeManagerFull.csproj", "{C3ABCDCC-C563-49B8-879C-7F374BEA4836}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Models", "Models", "{2938494E-3F83-45BA-89D7-3254B9964374}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Views", "Views", "{BE529FF8-112B-4EC3-85A8-0B9B0C6BDAC7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ViewModels", "ViewModels", "{CA04B27F-FE9A-48DB-AAC4-9C265257AC1E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BackOfficeManagerLite", "BackOfficeManagerLite\BackOfficeManagerLite.csproj", "{0AE4D26C-4E46-469B-A19A-637BE6CE9455}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BackOfficeManager.Core", "BackOfficeManagerModels.Core\BackOfficeManager.Core.csproj", "{B0060072-C108-4214-9B45-D3AF693D1DFB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BackOfficeManager.Client", "BackOfficeManagerModels.Client\BackOfficeManager.Client.csproj", "{A1A85C14-74B7-400A-A719-628398B395F6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BackOfficeManager.Entities", "BackOfficeManager.Entities\BackOfficeManager.Entities.csproj", "{33023E6B-2C14-40FC-B412-40495235A48F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BackOfficeManagerFull.ViewModel", "BackOfficeManagerFull.ViewModel\BackOfficeManagerFull.ViewModel.csproj", "{4A8CBA1F-6D3F-4231-B0F8-65FA227F7223}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BackOfficeManagerLite.ViewModel", "BackOfficeManagerLite.ViewModel\BackOfficeManagerLite.ViewModel.csproj", "{D7E02182-2375-48BF-837F-5B2280627D4A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BackOfficeManager.CoreViewModel", "BackOfficeManager.CoreViewModel\BackOfficeManager.CoreViewModel.csproj", "{F8479C95-6B28-4D11-9EA2-2A0EB3AD4F35}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{2D1A919E-7E08-4380-8729-38E1E4F3EE42}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackOfficeManager.ModelTests", "BackOfficeManager.ModelTests\BackOfficeManager.ModelTests.csproj", "{36817CB7-BDD0-4AA0-8A8B-0A2B00E51360}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackOfficeManager.Settings", "BackOfficeManager.Settings\BackOfficeManager.Settings.csproj", "{187EE9BB-D79F-4BC0-9FE2-FCCFD32AE045}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C3ABCDCC-C563-49B8-879C-7F374BEA4836}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3ABCDCC-C563-49B8-879C-7F374BEA4836}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3ABCDCC-C563-49B8-879C-7F374BEA4836}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3ABCDCC-C563-49B8-879C-7F374BEA4836}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AE4D26C-4E46-469B-A19A-637BE6CE9455}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AE4D26C-4E46-469B-A19A-637BE6CE9455}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AE4D26C-4E46-469B-A19A-637BE6CE9455}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AE4D26C-4E46-469B-A19A-637BE6CE9455}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0060072-C108-4214-9B45-D3AF693D1DFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0060072-C108-4214-9B45-D3AF693D1DFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0060072-C108-4214-9B45-D3AF693D1DFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0060072-C108-4214-9B45-D3AF693D1DFB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1A85C14-74B7-400A-A719-628398B395F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1A85C14-74B7-400A-A719-628398B395F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1A85C14-74B7-400A-A719-628398B395F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1A85C14-74B7-400A-A719-628398B395F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33023E6B-2C14-40FC-B412-40495235A48F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33023E6B-2C14-40FC-B412-40495235A48F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33023E6B-2C14-40FC-B412-40495235A48F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33023E6B-2C14-40FC-B412-40495235A48F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A8CBA1F-6D3F-4231-B0F8-65FA227F7223}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A8CBA1F-6D3F-4231-B0F8-65FA227F7223}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A8CBA1F-6D3F-4231-B0F8-65FA227F7223}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A8CBA1F-6D3F-4231-B0F8-65FA227F7223}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7E02182-2375-48BF-837F-5B2280627D4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7E02182-2375-48BF-837F-5B2280627D4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7E02182-2375-48BF-837F-5B2280627D4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7E02182-2375-48BF-837F-5B2280627D4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8479C95-6B28-4D11-9EA2-2A0EB3AD4F35}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8479C95-6B28-4D11-9EA2-2A0EB3AD4F35}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8479C95-6B28-4D11-9EA2-2A0EB3AD4F35}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8479C95-6B28-4D11-9EA2-2A0EB3AD4F35}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36817CB7-BDD0-4AA0-8A8B-0A2B00E51360}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36817CB7-BDD0-4AA0-8A8B-0A2B00E51360}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36817CB7-BDD0-4AA0-8A8B-0A2B00E51360}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36817CB7-BDD0-4AA0-8A8B-0A2B00E51360}.Release|Any CPU.Build.0 = Release|Any CPU
+		{187EE9BB-D79F-4BC0-9FE2-FCCFD32AE045}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{187EE9BB-D79F-4BC0-9FE2-FCCFD32AE045}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{187EE9BB-D79F-4BC0-9FE2-FCCFD32AE045}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{187EE9BB-D79F-4BC0-9FE2-FCCFD32AE045}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C3ABCDCC-C563-49B8-879C-7F374BEA4836} = {BE529FF8-112B-4EC3-85A8-0B9B0C6BDAC7}
+		{0AE4D26C-4E46-469B-A19A-637BE6CE9455} = {BE529FF8-112B-4EC3-85A8-0B9B0C6BDAC7}
+		{B0060072-C108-4214-9B45-D3AF693D1DFB} = {2938494E-3F83-45BA-89D7-3254B9964374}
+		{A1A85C14-74B7-400A-A719-628398B395F6} = {2938494E-3F83-45BA-89D7-3254B9964374}
+		{33023E6B-2C14-40FC-B412-40495235A48F} = {2938494E-3F83-45BA-89D7-3254B9964374}
+		{4A8CBA1F-6D3F-4231-B0F8-65FA227F7223} = {CA04B27F-FE9A-48DB-AAC4-9C265257AC1E}
+		{D7E02182-2375-48BF-837F-5B2280627D4A} = {CA04B27F-FE9A-48DB-AAC4-9C265257AC1E}
+		{F8479C95-6B28-4D11-9EA2-2A0EB3AD4F35} = {CA04B27F-FE9A-48DB-AAC4-9C265257AC1E}
+		{36817CB7-BDD0-4AA0-8A8B-0A2B00E51360} = {2D1A919E-7E08-4380-8729-38E1E4F3EE42}
+		{187EE9BB-D79F-4BC0-9FE2-FCCFD32AE045} = {2938494E-3F83-45BA-89D7-3254B9964374}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8D3860FC-B6A7-4652-A980-5EDDF5F94BA0}
+	EndGlobalSection
+EndGlobal
