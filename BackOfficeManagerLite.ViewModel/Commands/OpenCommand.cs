@@ -48,7 +48,7 @@ namespace BackOfficeManager.CoreViewModel
             catch (Exception ex)
             {
 
-                throw;
+                _viewModel.OutputLog = $"{DateTime.Now} ERROR: {ex.Message}";
             }
 
 

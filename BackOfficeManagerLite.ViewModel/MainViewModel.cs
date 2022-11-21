@@ -67,7 +67,7 @@ namespace BackOfficeManagerLite.ViewModel
             Login = user.Login;
             Password = user.Password;
             PathToFolder = settingsService.GetSettingsByName("PathToFolder").ToString();
-            SetPathToFolder = new PathToFolderCommand(this);
+            SetPathToFolder = new PathToFolderCommand(settingsService,this);
             OpenBackOffice = new OpenCommand(serverPropertiesService, clientService, clientConfig, authorization, settingsService, this);
         }
     }

@@ -18,7 +18,7 @@ namespace BackOfficeManager.CoreViewModel
         public override void Execute(object? parameter)
         {
             _settings.SetSettings(_viewModel.PathToFolder, _viewModel.Login, _viewModel.Password);
-            MessageBox.Show("Настройки сохранены!");
+            _viewModel.OutputLog = "Настройки сохранены!";
         }
     }
 }
