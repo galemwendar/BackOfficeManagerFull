@@ -1,4 +1,5 @@
 using BackOfficeManager.Entities;
+using System.Reflection;
 using System.Xml.Linq;
 
 namespace BackOfficeManager.Settings
@@ -7,7 +8,19 @@ namespace BackOfficeManager.Settings
     {
         public object GetSettingsByName(string name)
         {
-            var path = "settings.xml";
+            //var pathToFile = ;
+
+            string roamingpath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
+            var path = Path.Combine(roamingpath, "BackOfficeManagerLite\\settings.xml");
+            if (!File.Exists(path))
+            {
+                Directory.CreateDirectory(Path.Combine(roamingpath, "BackOfficeManagerLite"));
+                new XDocument(
+                    new XElement("settings",
+                        new XElement("User",
+                            new XElement("Login"), new XElement("Password")),
+                        new XElement("PathToFolder"))).Save(path);
+            }
 
             XDocument settingsXml = XDocument.Load(path);
             XElement root = settingsXml.Element("settings");
@@ -24,7 +37,8 @@ namespace BackOfficeManager.Settings
         public void SetSettings(string pathToFolder, string login, string password)
         {
             var user = new User(login, password);
-            var path = "settings.xml";
+            string roamingpath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
+            var path = Path.Combine(roamingpath, "BackOfficeManagerLite\\settings.xml");
             XDocument settingsXml = XDocument.Load(path);
             XElement root = settingsXml.Element("settings");
 

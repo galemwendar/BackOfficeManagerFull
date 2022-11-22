@@ -63,12 +63,25 @@ namespace BackOfficeManagerLite.ViewModel
             CloseAll = new CloseAllCommand(clientService);
             CheckProperties = new CheckCommand(serverPropertiesService, this);
             SaveSettings = new SettingsCommand(settingsService, this);
-            User user = (User)settingsService.GetSettingsByName("User");
-            Login = user.Login;
-            Password = user.Password;
+            LoadSettings(settingsService);
             PathToFolder = settingsService.GetSettingsByName("PathToFolder").ToString();
-            SetPathToFolder = new PathToFolderCommand(settingsService,this);
+            SetPathToFolder = new PathToFolderCommand(settingsService, this);
             OpenBackOffice = new OpenCommand(serverPropertiesService, clientService, clientConfig, authorization, settingsService, this);
+        }
+
+        private void LoadSettings(ISettingsService settingsService)
+        {
+            try
+            {
+                User user = (User)settingsService.GetSettingsByName("User");
+                Login = user.Login;
+                Password = user.Password;
+            }
+            catch (Exception ex)
+            {
+
+                OutputLog = ex.Message;
+            }
         }
     }
 }
