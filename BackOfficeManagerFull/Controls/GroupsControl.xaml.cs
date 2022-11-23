@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace BackOfficeManagerFullView.Controls
 {
     /// <summary>
-    /// Логика взаимодействия для HomeControl.xaml
+    /// Логика взаимодействия для GroupsControl.xaml
     /// </summary>
-    public partial class HomeControl : UserControl
+    public partial class GroupsControl : UserControl
     {
-        public HomeControl()
+        public GroupsControl()
         {
             InitializeComponent();
         }

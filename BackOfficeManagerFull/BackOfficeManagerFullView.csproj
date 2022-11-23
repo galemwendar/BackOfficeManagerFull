@@ -21,4 +21,8 @@
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\BackOfficeManagerFull.ViewModel\BackOfficeManagerFull.ViewModel.csproj" />
+  </ItemGroup>
+
 </Project>

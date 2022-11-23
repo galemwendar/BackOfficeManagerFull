@@ -1,9 +1,17 @@
-﻿<Application x:Class="BackOfficeManagerFull.App"
+﻿<Application x:Class="BackOfficeManagerFullView.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:BackOfficeManagerFull"
-             StartupUri="MainWindow.xaml">
+             xmlns:view="clr-namespace:BackOfficeManagerFullView.Controls"
+             xmlns:vm="clr-namespace:BackOfficeManagerFull.ViewModel;assembly=BackOfficeManagerFull.ViewModel">
     <Application.Resources>
-         
+        <DataTemplate DataType="{x:Type vm:HomeControlViewModel}">
+            <view:HomeControl/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type vm:GroupsControlViewModel}">
+            <view:GroupsControl/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type vm:SettingsControlViewModel}">
+            <view:SettingsControl/>
+        </DataTemplate>
     </Application.Resources>
 </Application>

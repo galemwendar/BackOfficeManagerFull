@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace BackOfficeManagerFull.Controls
+namespace BackOfficeManagerFullView.Controls
 {
     /// <summary>
     /// Логика взаимодействия для SettingsControl.xaml
